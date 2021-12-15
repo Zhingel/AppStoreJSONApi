@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		EEE66EF2276A107700704DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE66EF1276A107700704DE7 /* AppDelegate.swift */; };
 		EEE66EF4276A107700704DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE66EF3276A107700704DE7 /* SceneDelegate.swift */; };
-		EEE66EF6276A107700704DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE66EF5276A107700704DE7 /* ViewController.swift */; };
-		EEE66EF9276A107700704DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE66EF7276A107700704DE7 /* Main.storyboard */; };
 		EEE66EFB276A107900704DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE66EFA276A107900704DE7 /* Assets.xcassets */; };
 		EEE66EFE276A107900704DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE66EFC276A107900704DE7 /* LaunchScreen.storyboard */; };
+		EEE66F06276A10EE00704DE7 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE66F05276A10EE00704DE7 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE66EEE276A107700704DE7 /* AppStoreJSONApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJSONApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE66EF1276A107700704DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE66EF3276A107700704DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEE66EF5276A107700704DE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEE66EF8276A107700704DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEE66EFA276A107900704DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE66EFD276A107900704DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEE66EFF276A107900704DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE66F05276A10EE00704DE7 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +56,7 @@
 			children = (
 				EEE66EF1276A107700704DE7 /* AppDelegate.swift */,
 				EEE66EF3276A107700704DE7 /* SceneDelegate.swift */,
-				EEE66EF5276A107700704DE7 /* ViewController.swift */,
-				EEE66EF7276A107700704DE7 /* Main.storyboard */,
+				EEE66F05276A10EE00704DE7 /* BaseTabBarController.swift */,
 				EEE66EFA276A107900704DE7 /* Assets.xcassets */,
 				EEE66EFC276A107900704DE7 /* LaunchScreen.storyboard */,
 				EEE66EFF276A107900704DE7 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				EEE66EFE276A107900704DE7 /* LaunchScreen.storyboard in Resources */,
 				EEE66EFB276A107900704DE7 /* Assets.xcassets in Resources */,
-				EEE66EF9276A107700704DE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE66EF6276A107700704DE7 /* ViewController.swift in Sources */,
+				EEE66F06276A10EE00704DE7 /* BaseTabBarController.swift in Sources */,
 				EEE66EF2276A107700704DE7 /* AppDelegate.swift in Sources */,
 				EEE66EF4276A107700704DE7 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEE66EF7276A107700704DE7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEE66EF8276A107700704DE7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EEE66EFC276A107900704DE7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +282,6 @@
 				INFOPLIST_FILE = AppStoreJSONApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +309,6 @@
 				INFOPLIST_FILE = AppStoreJSONApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
