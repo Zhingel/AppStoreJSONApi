@@ -12,8 +12,16 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.backgroundColor = .white 
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         
+    }
+    init() {
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         3
@@ -27,3 +35,6 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
         CGSize(width: view.bounds.width, height: 160)
     }
 }
+
+
+
